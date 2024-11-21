@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { CardContent } from "../ui/card";
+import { useTranslations } from "next-intl";
 import {
   Form,
   FormControl,
@@ -9,34 +10,76 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
-import { signUpSchema, SignUpSchema } from "@/schema/signUpSchema";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { CardContent } from "@/components/ui/card";
+import { LoadingState } from "@/components/ui/loading-state";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { signInSchema, SignInSchema } from "@/schema/signInSchema";
 import { ProviderSignInBtns } from "./ProviderSignInBtns";
-import { useState } from "react";
-import { Input } from "../ui/input";
-import { useTranslations } from "next-intl";
-import { Button } from "../ui/button";
-import { LoadingState } from "../ui/loading-state";
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useToast } from "@/hooks/use-toast";
 
 export const SignInCardContent = () => {
   const t = useTranslations("AUTH");
   const m = useTranslations("MESSAGES");
-  const form = useForm<SignUpSchema>({
-    resolver: zodResolver(signUpSchema),
+  const form = useForm<SignInSchema>({
+    resolver: zodResolver(signInSchema),
     defaultValues: {
       email: "",
       password: "",
-      username: "",
     },
   });
 
   const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
+  const router = useRouter();
+
+  const onSubmit = async (data: SignInSchema) => {
+    setIsLoading(true);
+
+    try {
+      const account = await signIn("credentials", {
+        email: data.email,
+        password: data.password,
+        redirect: false,
+      });
+
+      if (!account) throw new Error("Something went wrong");
+
+      if (account.error) {
+        toast({
+          title: m(account.error),
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: m("SUCCESS.SIGN_IN"),
+        });
+        router.push("/onboarding");
+        router.refresh();
+      }
+    } catch (err) {
+      let errMsg = m("ERRORS.DEFAULT");
+      if (typeof err === "string") {
+        errMsg = err;
+      } else if (err instanceof Error) {
+        errMsg = m(err.message);
+      }
+      toast({
+        title: errMsg,
+        variant: "destructive",
+      });
+    }
+    setIsLoading(false);
+  };
 
   return (
     <CardContent>
       <Form {...form}>
-        <form className="space-y-7">
-          <ProviderSignInBtns disabled={isLoading} onLoading={setIsLoading} />
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-7">
+          <ProviderSignInBtns signInCard onLoading={setIsLoading} />
           <div className="space-y-1.5">
             <FormField
               control={form.control}

@@ -8,14 +8,20 @@ datasource db {
 }
 
 model User {
-  id             String    @id @default(cuid())
-  name           String    @unique
-  email          String?   @unique
-  emailVerified  DateTime?
-  hashedPassword String?
-  image          String?
-  accounts       Account[]
-  sessions       Session[]
+  id                  String         @id @default(cuid())
+  name                String?
+  username            String         @unique
+  surname             String?
+  email               String?        @unique
+  emailVerified       DateTime?
+  hashedPassword      String?
+  image               String?
+  completedOnboarding Boolean        @default(false)
+  accounts            Account[]
+  sessions            Session[]
+  createdWorkspaces   Workspace[]    @relation("CreatedBy")
+  subscriptions       Subscription[]
+  useCase             UseCase?
 }
 
 model Account {
@@ -54,4 +60,42 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+enum UserPermission {
+  ADMIN
+  CAN_EDIT
+  READ_ONLY
+  OWNER
+}
+
+enum UseCase {
+  WORK
+  STUDY
+  PERSONAL_USE
+}
+
+model Workspace {
+  id          String         @id @default(cuid())
+  name        String
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  creatorId   String?
+  Creator     User?          @relation("CreatedBy", fields: [creatorId], references: [id], onDelete: Cascade)
+  subscribers Subscription[]
+  image       String?
+
+  @@index([creatorId])
+}
+
+model Subscription {
+  user        User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String
+  workspace   Workspace      @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  workspaceId String
+  userRole    UserPermission @default(READ_ONLY)
+
+  @@id([userId, workspaceId])
+  @@index([workspaceId])
+  @@index([userId])
 }

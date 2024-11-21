@@ -17,6 +17,9 @@ import { Input } from "../ui/input";
 import { useTranslations } from "next-intl";
 import { Button } from "../ui/button";
 import { LoadingState } from "../ui/loading-state";
+import { useToast } from "@/hooks/use-toast";
+import { useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
 
 export const SignUpCardContent = () => {
   const t = useTranslations("AUTH");
@@ -31,11 +34,54 @@ export const SignUpCardContent = () => {
   });
 
   const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
+  const router = useRouter();
+
+  const onSubmit = async (data: SignUpSchema) => {
+    setIsLoading(true);
+
+    try {
+      const res = await fetch("/api/auth/register", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!res.ok) throw new Error("Something went wrong");
+      const signUpInfo = await res.json();
+
+      if (res.status === 200) {
+        toast({
+          title: m("SUCCESS.SIGN_UP"),
+        });
+        await signIn("credentials", {
+          email: data.email,
+          password: data.password,
+          redirect: false,
+        });
+        router.push("/");
+      } else throw new Error(signUpInfo);
+    } catch (err) {
+      let errMsg = m("ERRORS.DEFAULT");
+      if (typeof err === "string") {
+        errMsg = err;
+      } else if (err instanceof Error) {
+        errMsg = m(err.message);
+      }
+      toast({
+        title: errMsg,
+        variant: "destructive",
+      });
+    }
+    setIsLoading(false);
+  };
 
   return (
     <CardContent>
       <Form {...form}>
-        <form className="space-y-7">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-7">
           <ProviderSignInBtns disabled={isLoading} onLoading={setIsLoading} />
           <div className="space-y-1.5">
             <FormField
