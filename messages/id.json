@@ -1,0 +1,851 @@
+{
+  "Index": {
+    "title": "Halo dunia!"
+  },
+  "AUTH": {
+    "EMAIL": "Email",
+    "PASSWORD": "Kata sandi",
+    "USERNAME": "Nama pengguna",
+    "SIGN_IN": {
+      "TITLE": "Masuk",
+      "DESC": "Selamat datang kembali",
+      "SUBMIT_BTN": "Masuk",
+      "FORGOT_PASSWORD": "Lupa kata sandi?",
+      "DONT_HAVE_ACCOUNT": {
+        "FIRST": "Tidak punya akun?",
+        "SECOND": "Daftar"
+      },
+      "PROVIDERS": {
+        "GOOGLE": "Masuk dengan Google",
+        "APPLE": "Masuk dengan Apple",
+        "GITHUB": "Masuk dengan Github"
+      }
+    },
+    "SIGN_UP": {
+      "TITLE": "Daftar",
+      "DESC": "Buat akun Anda",
+      "SUBMIT_BTN": "Daftar",
+      "FORGOT_PASSWORD": "Lupa kata sandi?",
+      "HAVE_ACCOUNT": {
+        "FIRST": "Sudah punya akun?",
+        "SECOND": "Masuk"
+      },
+      "TERMS": {
+        "FIRST": "Dengan mendaftar, Anda menyetujui",
+        "SECOND": "Ketentuan Layanan kami"
+      },
+      "PROVIDERS": {
+        "GOOGLE": "Daftar dengan Google",
+        "APPLE": "Daftar dengan Apple",
+        "GITHUB": "Daftar dengan Github"
+      }
+    },
+    "NEW_WORKSPACE": {
+      "INPUTS": {
+        "NAME": "Nama ruang kerja",
+        "FILE": "Ikon ruang kerja (opsional)"
+      },
+      "PLACEHOLDERS": {
+        "NAME": "Contoh: OpenStudio"
+      },
+      "IMAGE": "Hanya jenis .jpeg, .jpg, .png, .webp, .gif yang didukung",
+      "BTN_ADD": "Buat",
+      "BTN_PENDING": "Membuat. Harap tunggu"
+    }
+  },
+  "CHANGE_PROFILE_IMAGE": {
+    "TITLE": "Kirim foto!",
+    "BUTTON": "Pilih foto"
+  },
+  "ONBOARDING_FORM": {
+    "FIRST_STEP": {
+      "TITLE": {
+        "FIRST": "Mari mempersiapkan Anda",
+        "SECOND": "siap"
+      },
+      "PHOTO": "Tambah foto",
+      "INPUTS": {
+        "NAME": "Nama depan",
+        "SURNAME": "Nama belakang"
+      },
+      "PLACEHOLDER": {
+        "NAME": "Vineeth",
+        "SURNAME": "Reddy"
+      }
+    },
+    "SECOND_STEP": {
+      "TITLE": "Bagaimana Anda akan menggunakan",
+      "INFO": "Kami menggunakan informasi ini untuk mempersonalisasi pengalaman Anda",
+      "WORK": "Untuk bekerja",
+      "STUDY": "Untuk belajar",
+      "PERSONAL": "Untuk penggunaan pribadi"
+    },
+    "THIRD_STEP": {
+      "TITLE": "Buat ruang kerja",
+      "INPUTS": {
+        "NAME": "Nama ruang kerja",
+        "FILE": "Ikon ruang kerja (opsional)"
+      },
+      "PLACEHOLDERS": {
+        "NAME": "Contoh: Open Studio"
+      },
+      "IMAGE": "Hanya jenis .jpeg, .jpg, .png, .webp, .gif yang didukung"
+    },
+    "FINISH": {
+      "TITLE": "Selesai!",
+      "DESC_FIRST": "Anda sudah bisa mulai menggunakan",
+      "DESC_SECOND": "dengan mengklik tombol di bawah ini"
+    },
+    "START_BTN": "Mulai",
+    "NEXT_BTN": "Lanjutkan",
+    "IS_DONE": "sedikit lagi"
+  },
+  "UPLOAD_FILE": {
+    "UPLOAD": "Unggah"
+  },
+  "INVITE": {
+    "HINT": "Tambahkan ke ruang kerja",
+    "INVITE": "Undang",
+    "TITLE": "Undang ke",
+    "DESC": "Salin tautan undangan dan kirim ke orang yang ingin Anda undang ke ruang kerja ini. Anda dapat mengatur peran dan menghasilkan tautan baru."
+  },
+  "LEAVE_FROM_WORKSPACE": {
+    "LEAVE": "Keluar",
+    "TITLE": "Keluar",
+    "DESC": "Anda dapat meninggalkan ruang kerja kapan saja dan kembali kapan pun Anda diundang kembali.",
+    "WARNING": "Semua tugas dan peta pikiran dari ruang kerja ini yang telah ditambahkan ke tab “Berbintang” akan dihapus dari sana. Hal yang sama berlaku untuk aktivitas yang ditugaskan kepada Anda.",
+    "LOADING_BTN": "Meninggalkan. Harap tunggu"
+  },
+  "MESSAGES": {
+    "ERRORS": {
+      "DEFAULT": "Oh tidak..Terjadi kesalahan. Silakan coba lagi",
+      "TAKEN_USERNAME": "Nama pengguna ini sudah digunakan",
+      "TAKEN_EMAIL": "Email ini sudah digunakan...",
+      "DB_ERROR": "Kami sedang mengalami masalah. Silakan coba lagi nanti",
+      "WRONG_DATA": "Data yang Anda berikan salah. Silakan berikan data yang benar.",
+      "NO_USER": "Pengguna tidak ditemukan. Silakan masukkan email yang valid",
+      "WRONG_PASSWORD": "Kata sandi yang dimasukkan salah. Silakan masukkan yang benar.",
+      "IMAGE_PROFILE_UPDATE": "Gagal memperbarui gambar profil Anda. Silakan coba lagi",
+      "IMAGE_PROFILE_DELETE": "Gagal menghapus gambar profil Anda. Silakan coba lagi.",
+      "UPLOAD_FAILED": "Gagal mengunggah file Anda. Silakan coba lagi.",
+      "WORKSPACE_ICON_ADDED": "Gagal menambahkan ikon ruang kerja. Silakan coba lagi",
+      "NO_USER_API": "Pengguna tidak ditemukan",
+      "UNAUTHORIZED": "Tidak sah. Silakan masuk!",
+      "TOO_MANY_WORKSPACES": "Batas jumlah ruang kerja yang dapat dibuat telah tercapai"
+    },
+    "SUCCESS": {
+      "SIGN_UP": "Akun telah dibuat!",
+      "SIGN_IN": "Anda telah masuk!",
+      "IMAGE_PROFILE_UPDATE": "Gambar profil Anda telah diperbarui!",
+      "IMAGE_PROFILE_DELETE": "Gambar profil Anda telah dihapus!",
+      "ONBOARDING_COMPLETE": "Selamat datang di Super Produktif!",
+      "PASSWORD_CHANGED": "Kata sandi telah diubah!",
+      "NEW_WORKSPACE": "Ruang kerja telah dibuat!"
+    },
+    "PENDING": {
+      "LOADING": "Harap tunggu"
+    },
+    "SCHEMA": {
+      "PASSWORD": {
+        "MIN": "Kata sandi harus memiliki setidaknya 6 karakter",
+        "UPPERCASE": "Kata sandi harus mengandung setidaknya satu huruf besar",
+        "LOWERCASE": "Kata sandi harus mengandung setidaknya satu huruf kecil",
+        "DIGIT": "Kata sandi harus mengandung setidaknya satu angka"
+      },
+      "EMAIL": "Silakan masukkan email yang valid",
+      "USERNAME": {
+        "SHORT": "Nama pengguna terlalu pendek",
+        "SPECIAL_CHARS": "Nama pengguna hanya boleh berisi huruf dan angka"
+      },
+      "IMAGE": {
+        "MAX": "Ukuran gambar maksimal adalah 5MB",
+        "SUPPORTED": "Hanya jenis .jpeg, .jpg, .png, .webp, .gif yang didukung"
+      },
+      "WORKSPACE": {
+        "SHORT": "Nama ruang kerja terlalu pendek",
+        "SPECIAL_CHARS": "Nama ruang kerja hanya boleh berisi huruf dan angka"
+      },
+      "LANGUAGE": "Silakan pilih bahasa",
+      "CHOOSE_ONE": "Silakan pilih salah satu opsi"
+    }
+  },
+  "SIDEBAR": {
+    "MAIN": {
+      "HOME_HOVER": "Beranda",
+      "LOG_OUT_HOVER": "Keluar",
+      "SETTINGS_HOVER": "Pengaturan",
+      "POMODORO_HOVER": "Pomodoro",
+      "STARRED_HOVER": "Berbintang",
+      "ASSIGNED_TO_ME_HOVER": "Diberikan kepada saya",
+      "CALENDAR_HOVER": "Kalender",
+      "NEW_WORKSPACE_HOVER": "Ruang Kerja Baru",
+      "NEW_WORKSPACE_DIALOG_TITLE": "Buat ruang kerja baru",
+      "NEW_WORKSPACE_DIALOG_DESC": "teks"
+    },
+    "SETTINGS": {
+      "GENERAL": "Umum",
+      "ACCOUNT": "Akun",
+      "SECURITY": "Keamanan",
+      "THEME": "Tema",
+      "WORKSPACE": "Ruang Kerja"
+    },
+    "POMODORO": {
+      "TIMER": "Pengatur Waktu",
+      "SETTINGS": "Pengaturan"
+    },
+    "WORKSPACE_OPTIONS": {
+      "SHORTCUTS": "Jalan pintas",
+      "TASKS": "Tugas",
+      "MIND_MAPS": "Peta Pikiran",
+      "SCHEDULES": "Jadwal",
+      "STUDY": "Belajar",
+      "FILES": "Berkas",
+      "DEFAULT_NAME": "Tanpa Nama",
+      "ACTIONS": "Tindakan",
+      "ADD_TASK": "Tambahkan tugas",
+      "ADD_MIND_MAP": "Tambahkan peta pikiran"
+    }
+  },
+  "COMMON": {
+    "WELCOMEBACK": "Selamat datang kembali",
+    "LANG_HOVER": "Ubah bahasa",
+    "THEME_HOVER": "Ubah Tema",
+    "DARK": "Gelap",
+    "LIGHT": "Terang",
+    "SYSTEM": "Sistem",
+    "LOG_OUT": "Keluar",
+    "SETTINGS": "Pengaturan",
+    "WARNING": "PERINGATAN",
+    "NOTICE": "PENITIPAN",
+    "DEFAULT_NAME": {
+      "MIND_MAP": "Peta Pikiran Tanpa Nama",
+      "TASK": "Tugas Tanpa Nama"
+    },
+    "ACTIVE_WORKSPACES": {
+      "FIRST": "Anda memiliki",
+      "SECOND": "dari",
+      "THIRD": "ruang kerja aktif"
+    },
+    "BACK_BTN": "Kembali",
+    "SAVING_STATUS": {
+      "SAVED": "Tersimpan",
+      "SAVING": "Menyimpan",
+      "UNSAVED": "Belum Tersimpan"
+    },
+    "TAG": {
+      "FILTER": "Filter",
+      "NEW_TAG": "Tag baru",
+      "TAG": "Tag",
+      "ERROR": "Oops... Ada yang salah",
+      "ERROR_BTN": "Coba lagi",
+      "NOT_FOUND": "Tidak ditemukan",
+      "TAGS_HEADING": "TAG",
+      "NEW_HEADING": "BARU",
+      "ADD_TAG": "Tambahkan tag",
+      "COLORS": "Warna",
+      "TAG_NAME": "Nama",
+      "BTNS": {
+        "CREATE": "Buat",
+        "CANCEL": "Batal",
+        "DELETE": "Hapus",
+        "UPDATE": "Perbarui"
+      }
+    },
+    "EDITED_ITEM_SENTENCE": {
+      "MIND_MAP": "Peta pikiran diperbarui",
+      "TASK": "Tugas diperbarui",
+      "BY": "oleh",
+      "IN": " - di"
+    }
+  },
+  "PERMISSIONS": {
+    "WAIT": "Harap tunggu",
+    "PERMISSIONS": "IZIN",
+    "COPY": "Salin tautan",
+    "OWNER": {
+      "TITLE": "Pemilik"
+    },
+    "ADMIN": {
+      "TITLE": "Admin",
+      "DESC": "Memiliki semua hak, termasuk mengubah pengaturan ruang kerja dan mengelola pengguna lain."
+    },
+    "EDITOR": {
+      "TITLE": "Editor",
+      "DESC": "Memiliki akses penuh ke ruang kerja dan memiliki hak untuk mengedit dan menghapus konten di ruang kerja. Namun, dia tidak memiliki akses ke pengaturan area."
+    },
+    "VIEWER": {
+      "TITLE": "Penonton",
+      "DESC": "Memiliki akses penuh ke ruang kerja, tetapi tidak dapat mengedit atau menghapus apa pun. Dia juga tidak memiliki akses ke pengaturan area."
+    }
+  },
+  "TASK": {
+    "HEADER": {
+      "PLACEHOLDER": "Tugas tanpa judul",
+      "DATE": {
+        "PICK": "Pilih tanggal",
+        "INFO": "Jika Anda memilih tanggal, tugas akan ditambahkan ke kalender Anda"
+      },
+      "TAG": {
+        "FILTER": "Filter",
+        "NEW_TAG": "Tag baru",
+        "TAG": "Tag",
+        "ERROR": "Oops... Ada yang salah",
+        "ERROR_BTN": "Coba lagi",
+        "NOT_FOUND": "Tidak ditemukan",
+        "TAGS_HEADING": "TAG",
+        "NEW_HEADING": "BARU",
+        "ADD_TAG": "Tambahkan tag",
+        "COLORS": "Warna",
+        "TAG_NAME": "Nama",
+        "BTNS": {
+          "CREATE": "Buat",
+          "CANCEL": "Batal",
+          "DELETE": "Hapus",
+          "UPDATE": "Perbarui"
+        }
+      }
+    },
+    "EDITOR": {
+      "PLACEHOLDER": "Tulis sesuatu yang keren 📝",
+      "WORDS": "jumlah kata:",
+      "CHARS": "karakter",
+      "IMAGE": {
+        "TITLE": "Tambahkan gambar",
+        "DESC": "Anda dapat menambahkan foto dengan memberikan tautan atau mengimpornya dari perangkat Anda.",
+        "LINK": "Tambahkan melalui tautan",
+        "UPLOAD": "Impor dari perangkat",
+        "LINK_TAB": {
+          "PLACEHOLDER": "Tautan foto",
+          "BTN_ADD": "Tambahkan gambar",
+          "BTN_PENDING": "Memeriksa tautan"
+        },
+        "UPLOAD_TAB": {
+          "TYPES": "Hanya jenis .jpeg, .jpg, .png, .webp, .gif yang diizinkan",
+          "BTN_ADD": "Tambahkan gambar",
+          "BTN_PENDING": "Menambahkan"
+        }
+      },
+      "HOVER": {
+        "H1": "Judul 1",
+        "H2": "Judul 2",
+        "H3": "Judul 3",
+        "H4": "Judul 4",
+        "H5": "Judul 5",
+        "H6": "Judul 6",
+        "BOLD": "Tebal",
+        "ITALIC": "Miring",
+        "STRIKETHROUGH": "Coret",
+        "UNDERLINE": "Garis Bawah",
+        "CODE": "Kode",
+        "UL": "Daftar Tak Berurutan",
+        "OL": "Daftar Berurutan",
+        "LINK": "Tambah hyperlink",
+        "IMAGE": "Tambah gambar",
+        "COLOR": "Sorot",
+        "COLOR_DEFAULT": "Warna default",
+        "UNDO": "Urungkan",
+        "REDO": "Ulangi",
+        "DELETE": "Hapus"
+      },
+      "READ_ONLY": {
+        "NO_DATE": "tidak tercatat dalam kalender",
+        "NO_TITLE": "Tugas tanpa judul",
+        "NO_CONTENT": "Tugas tanpa konten",
+        "DELETE": "Hapus",
+        "EDIT": "Edit",
+        "ADD_TO_FAV": "Tambah ke favorit",
+        "REMOVE_FROM_FAV": "Hapus dari favorit",
+        "CREATOR_INFO": "Dibuat oleh",
+        "EDITOR_INFO": "Diedit oleh",
+        "DIALOG": {
+          "TITLE": "Hapus tugas",
+          "DESC": "Apakah Anda yakin ingin menghapus catatan ini? Anda akan kehilangan semua data yang terkandung di dalamnya dan kegiatan yang terkait dengannya. Penghapusan tidak dapat dibatalkan",
+          "BTN_DELETE": "Hapus tugas",
+          "BTN_PENDING": "Menghapus"
+        }
+      }
+    },
+    "BTN": {
+      "SAVE_TASK": "Tambahkan tugas"
+    },
+    "ASSIGNMENT": {
+      "TRIGGER": "Tugaskan",
+      "ERROR_MSG": "Ada yang salah, silakan coba lagi",
+      "ERROR_BTN": "Coba lagi",
+      "PLACEHOLDER": "Filter",
+      "NOT_FOUND": "Pengguna tidak ditemukan",
+      "HEADING": "TUGASKAN KEPADA"
+    },
+    "CREATOR_INFO": "Dibuat oleh",
+    "EDITOR_INFO": "Diedit oleh"
+  },
+  "MIND_MAP": {
+    "HOVER_TIP": {
+      "ADD_TITLE": "Tambahkan judul baru",
+      "SAVE": "Simpan peta pikiran"
+    },
+    "TAG": "Tambahkan tag ke peta pikiran",
+    "DELETE": {
+      "MESSAGE": {
+        "SUCCES": "Reset berhasil",
+        "ERROR": "Gagal menyimpan perubahan."
+      },
+      "HOVER": "Hapus semua ubin",
+      "DIALOG": {
+        "TITLE": "Hapus semua ubin",
+        "DESC": "Reset tata letak peta pikiran ke keadaan awal",
+        "WARNING": "Memulihkan keadaan awal akan menghapus semua ubin dan koneksi saat ini. Klik 'Reset State' untuk menghapus semua ubin dan koneksi.",
+        "BTN_RESET": "Reset State",
+        "BTN_PENDING": "Mereset"
+      }
+    },
+    "EDGE_OPTIONS": {
+      "TITLE": "Pengaturan Koneksi",
+      "DESC": "Sesuaikan tampilan koneksi Anda. Tambahkan teks, atur jenis koneksi, ubah warna, dan pilih apakah ingin menganimasikannya!",
+      "FORM": {
+        "LABEL": {
+          "LABEL": "Label",
+          "DESC": "Menambahkan teks akan menampilkan label. Biarkan kolom kosong dan simpan perubahan untuk menghapusnya.",
+          "PLACEHOLDER": "Tambahkan label"
+        },
+        "TYPE": {
+          "LABEL": "Jenis Koneksi",
+          "DEFAULT": "Default",
+          "STRAIGHT": "Lurus",
+          "STEP_SHARP": "Langkah",
+          "STEP_ROUNDED": "Langkah (sudut membulat)",
+          "DESC": "Pilih bagaimana koneksi berperilaku"
+        },
+        "COLOR": {
+          "LABEL": "Warna",
+          "DESC": "Pilihan warna hanya mempengaruhi label"
+        },
+        "ANIMATED": {
+          "LABEL": "Animasi Koneksi"
+        },
+        "BTN_SAVE": "Simpan",
+        "BTN_DELETE_EDGE": "Hapus Koneksi"
+      }
+    },
+    "NODE": {
+      "EDIT": "Edit",
+      "COLOR": "Warna",
+      "DELETE": "Hapus",
+      "SAVE": "Simpan Perubahan",
+      "CANCEL": "Batal",
+      "PLACEHOLDER": "Tambahkan deskripsi baru"
+    },
+    "EDIT_TITLE_AND_EMOJI": {
+      "ERROR": "Gagal menyimpan perubahan.",
+      "HOVER": "Edit informasi",
+      "TITLE": "Edit informasi",
+      "DESC": "Ubah nama peta pikiran Anda dan atur ikonnya",
+      "PLACEHOLDER": "Peta Pikiran Tanpa Nama",
+      "SAVE": "Simpan",
+      "CANCEL": "Batal"
+    },
+    "PREVIEW": {
+      "INFO": "Ini adalah halaman pratinjau. Anda dapat menavigasi ruang peta, tetapi untuk mengeditnya, pergi ke halaman pengeditan (jika Anda memiliki izin yang diperlukan).",
+      "NO_TITLE": "Peta pikiran tanpa nama",
+      "DELETE": "Hapus",
+      "EDIT": "Edit",
+      "ADD_TO_FAV": "Tambahkan ke Favorit",
+      "REMOVE_FROM_FAV": "Hapus dari Favorit",
+      "DIALOG": {
+        "TITLE": "Hapus peta pikiran",
+        "DESC": "Apakah Anda yakin ingin menghapus peta pikiran ini? Anda akan kehilangan semua data dan tindakan terkait. Penghapusan tidak dapat dibatalkan.",
+        "BTN_DELETE": "Hapus",
+        "BTN_PENDING": "Menghapus"
+      },
+      "CREATOR_INFO": "Dibuat oleh",
+      "EDITOR_INFO": "Diedit oleh"
+    },
+    "ASSIGNMENT": {
+      "TRIGGER": "Tugaskan",
+      "ERROR_MSG": "Ada yang salah, silakan coba lagi",
+      "ERROR_BTN": "Coba lagi",
+      "PLACEHOLDER": "Filter",
+      "NOT_FOUND": "Pengguna tidak ditemukan",
+      "HEADING": "TUGASKAN KEPADA"
+    }
+  },
+  "SETTINGS": {
+    "ACCOUNT": {
+      "TITLE": "Akun",
+      "DESC": "Kelola akun Super Produktif Anda. Semua perubahan pada akun Anda akan diterapkan ke semua ruang kerja.",
+      "IMAGE": "GAMBAR PROFIL",
+      "USERNAME": "NAMA PENGGUNA",
+      "FIRST_NAME": "NAMA DEPAN (OPSIONAL)",
+      "SURNAME": "NAMA BELAKANG (OPSIONAL)",
+      "USERNAME_PLACEHOLDER": "Nama pengguna",
+      "FIRST_NAME_PLACEHOLDER": "Nama depan",
+      "SURNAME_PLACEHOLDER": "Nama belakang",
+      "LANG": "BAHASA",
+      "SEARCH_LANGUAGE": "Cari bahasa...",
+      "SELECT_LANGUAGE": "Pilih bahasa",
+      "UPDATE_BTN": "Perbarui",
+      "DELETE_TITLE": "Hapus akun",
+      "DELETE_DESC": "Setelah akun dan data dihapus, tidak ada cara untuk memulihkannya.",
+      "DELETE_LABEL": "HAPUS AKUN DAN DATA SAYA",
+      "DELETE_PLACEHOLDER": "Konfirmasi email Anda",
+      "DELETE_BTN": "Hapus",
+      "DIALOG": {
+        "TITLE": "Hapus akun",
+        "DESC": "Anda akan kehilangan akses ke semua ruang kerja dan proyek Anda",
+        "WARNING": "Penghapusan akun bersifat permanen dan tidak dapat dibatalkan, klik 'Hapus akun saya' untuk menghapus akun Anda.",
+        "BUTTON": "HAPUS AKUN SAYA"
+      }
+    },
+    "THEME": {
+      "ADD_TASK": "Tambahkan tugas",
+      "ADD_TASK_PENDING": "Membuat tugas"
+    },
+    "SECURITY": {
+      "TITLE": "Keamanan",
+      "DESC": "Anda dapat mengubah kata sandi di sini. Ingat, kata sandi harus mengandung setidaknya 6 karakter, setidaknya satu huruf besar dan kecil, dan setidaknya satu angka",
+      "WARNING": {
+        "FIRST": "Kata sandi dapat diubah",
+        "SECOND": "hanya untuk akun yang dibuat melalui formulir di situs",
+        "THIRD": "Jika Anda membuat akun melalui tombol Google atau Github, ",
+        "FOURTH": "tidak mungkin mengubah kata sandi",
+        "FIFTH": "karena metode otorisasi akun yang berbeda."
+      },
+      "FORM": {
+        "CURRENT": {
+          "LABEL": "KATA SANDI SAAT INI",
+          "PLACEHOLDER": "Kata sandi saat ini"
+        },
+        "NEW": {
+          "LABEL": "KATA SANDI BARU",
+          "PLACEHOLDER": "Kata sandi baru"
+        },
+        "REPEAT": {
+          "LABEL": "KONFIRMASI KATA SANDI",
+          "PLACEHOLDER": "Konfirmasi kata sandi"
+        },
+        "BTN": "Ubah kata sandi",
+        "BTN_PENDING": "Mengubah kata sandi"
+      }
+    }
+  },
+  "POMODORO": {
+    "SETTINGS": {
+      "CARD": {
+        "TITLE": "Pengaturan Pomodoro",
+        "DESC": "Kelola pengaturan Anda. Personalisasi Pomodoro Anda sesuai keinginan. Anda dapat mengubah jumlah putaran, durasi kerja dan istirahat, serta menyesuaikan suara notifikasi."
+      },
+      "FORM": {
+        "TIMER": "Timer",
+        "SOUND": "Suara",
+        "WORK": {
+          "LABEL": "Durasi kerja: {value} menit",
+          "DESC": "Atur durasi kerja Anda"
+        },
+        "SHORT_BREAK": {
+          "LABEL": "Durasi istirahat singkat: {value} menit",
+          "DESC": "Atur durasi istirahat singkat Anda"
+        },
+        "LONG_BREAK": {
+          "LABEL": "Durasi istirahat panjang: {value} menit",
+          "DESC": "Atur durasi istirahat panjang Anda"
+        },
+        "ROUNDS": {
+          "LABEL": "Jumlah putaran: {value}",
+          "DESC": "Atur berapa banyak putaran yang menyelesaikan satu sesi penuh (satu putaran berakhir setelah waktu istirahat panjang habis)"
+        },
+        "LONG_BREAKS_INTERVAL": {
+          "LABEL": "Interval antara istirahat panjang: {value}",
+          "DESC": "Semakin besar nilai, semakin lama satu putaran berlangsung (interval yang lebih besar antara istirahat panjang)"
+        },
+        "ALARM": {
+          "LABEL": "Suara notifikasi",
+          "DESC": "Pilih suara yang akan diputar saat waktu habis",
+          "ANALOG": "Analog",
+          "BELL": "Bel",
+          "BIRD": "Burung",
+          "CHURCH_BELL": "Bel Gereja",
+          "DIGITAL": "Digital",
+          "FANCY": "Mewah"
+        },
+        "VOLUME": {
+          "LABEL": "Volume suara notifikasi: {value}%",
+          "DESC": "Untuk membisukan notifikasi, atur volume ke 0%"
+        },
+        "RESET": {
+          "BTN": "Reset Pengaturan",
+          "BTN_PENDING": "Mereset"
+        },
+        "SAVE": {
+          "BTN": "Simpan Perubahan",
+          "BTN_PENDING": "Menyimpan"
+        }
+      }
+    },
+    "TIMER": {
+      "END_TEXT": "Kerja bagus!",
+      "FOCUS": "Waktunya fokus",
+      "BREAK": "Waktunya istirahat!",
+      "ROUNDS": {
+        "FIRST": "Putaran",
+        "SECOND": "dari"
+      },
+      "NEW": "Mulai sesi baru",
+      "START": "Mulai",
+      "STOP": "Berhenti"
+    }
+  },
+  "STARRED": {
+    "TITLE": "Item berbintang Anda",
+    "DESC": "Di sini Anda akan menemukan semua peta pikiran dan tugas yang tersimpan.",
+    "ERROR": "Terjadi kesalahan saat mengambil data Anda. Silakan coba lagi.",
+    "ITEM_SENTENCE": {
+      "MIND_MAP": "Peta pikiran diperbarui",
+      "TASK": "Tugas diperbarui",
+      "BY": "oleh",
+      "IN": " - di"
+    },
+    "DEFAULT_NAME": {
+      "MIND_MAP": "Peta Pikiran Tanpa Nama",
+      "TASK": "Tugas Tanpa Nama"
+    },
+    "UNSTAR": "Hapus bintang",
+    "SORT": {
+      "ASC": "Terbaru",
+      "DESC": "Terlama",
+      "INFO": "Mengurutkan berdasarkan tanggal edit"
+    },
+    "NO_ITEMS": {
+      "TITLE": "Anda tidak memiliki proyek yang ditandai dengan bintang",
+      "DESC": "Setiap tugas atau peta pikiran yang Anda beri bintang akan muncul di sini."
+    }
+  },
+  "ASSIGNED_TO_ME": {
+    "TITLE": "Ditugaskan kepada saya",
+    "DESC": "Di sini Anda akan menemukan semua peta pikiran dan tugas yang tersimpan",
+    "NO_ASSIGMENT": "Anda belum ditugaskan di mana pun",
+    "NOT_FOUND": "Kami tidak dapat menemukan tugas atau peta pikiran yang memenuhi kriteria",
+    "DEFAULT_NAME": {
+      "MIND_MAP": "Peta Pikiran Tanpa Nama",
+      "TASK": "Tugas Tanpa Nama"
+    }
+  },
+  "CALENDAR": {
+    "DAYS_OF_WEEK": {
+      "MON": "SEN",
+      "TUE": "SEL",
+      "WED": "RAB",
+      "THU": "KAM",
+      "FRI": "JUM",
+      "SAT": "SAB",
+      "SUN": "MIN"
+    },
+    "HEADER": {
+      "PREV": "Sebelumnya",
+      "TODAY": "Hari ini",
+      "NEXT": "Berikutnya"
+    },
+    "TASK": "Tugas Tanpa Nama",
+    "SHOW_MORE": {
+      "MORE": "Lagi",
+      "TITLE": "Semua tugas",
+      "DESC": "Semua tugas dari ruang kerja yang Anda ikuti"
+    }
+  },
+  "TASK_SHORTCUT": {
+    "TITLE": "Buat Tugas",
+    "HINT": "Tambahan cepat",
+    "ADDED_TASK": "Tugas ditambahkan ke proyek! Lihat Tugas",
+    "CHOOSE_WORKSPACE": "Pilih Ruang Kerja",
+    "DESC": "Tambahkan tugas ke ruang kerja yang dipilih yang Anda ikuti dan memiliki izin yang diperlukan",
+    "BTN_ADD": "Tambahkan ke Ruang Kerja",
+    "BTN_NO_WORKSPACES": "Saya mengerti",
+    "BTN_PENDING": "Menambahkan. Harap tunggu",
+    "DUE_DATE": "Tanggal Jatuh Tempo",
+    "MAIN_TAB": {
+      "PLACEHOLDER": "Tambahkan judul",
+      "WORKSPACE": "Ruang Kerja",
+      "WARNING": "Anda belum memiliki ruang kerja di mana Anda dapat menambahkan tugas. Buat ruang kerja baru atau bergabunglah dengan ruang kerja yang ada dengan izin level minimal “Editor”."
+    }
+  },
+  "PERMISSION_INDICATOR": {
+    "TITLE": "Peran Anda saat ini adalah",
+    "DESC": "Izin Anda di ruang kerja {workspace} saat ini adalah",
+    "ROLES": {
+      "OWNER": "Pemilik",
+      "ADMIN": "Admin",
+      "CAN_EDIT": "Editor",
+      "READ_ONLY": "Penonton"
+    },
+    "HINT": "Izin di {workspace} adalah",
+    "ROLES_DESC": {
+      "OWNER": "Sebagai Pemilik, Anda memiliki semua hak. Anda dapat mengelola konten, pengguna lain, dan menyesuaikan pengaturan ruang kerja. Namun, sebagai Pemilik, Anda tidak dapat meninggalkan ruang kerja ini; satu-satunya opsi adalah menghapusnya sepenuhnya di pengaturan.",
+      "ADMIN": "Sebagai Admin, Anda memiliki semua hak, termasuk mengubah pengaturan ruang kerja dan mengelola pengguna lain.",
+      "CAN_EDIT": "Sebagai Editor, Anda memiliki akses penuh ke ruang kerja, dengan hak untuk mengedit dan menghapus konten di dalam ruang kerja. Namun, Anda tidak memiliki akses ke pengaturan ruang kerja.",
+      "READ_ONLY": "Sebagai Penonton, Anda memiliki akses penuh ke ruang kerja tetapi tidak memiliki izin untuk mengedit konten di dalamnya. Anda juga tidak memiliki akses ke pengaturan ruang kerja."
+    },
+    "BTN": "Dimengerti"
+  },
+  "USERS_STATUS_LIST": {
+    "ROLES": {
+      "OWNER": "Pemilik",
+      "ADMIN": "Admin",
+      "CAN_EDIT": "Editor",
+      "READ_ONLY": "Penonton",
+      "UNAVAILABLE": "TIDAK TERSEDIA"
+    },
+    "ERROR": {
+      "MG": "Gagal mengambil informasi anggota ruang kerja",
+      "BTN": "Coba lagi"
+    }
+  },
+  "NOTIFICATIONS": {
+    "TITLE": "Notifikasi",
+    "MARK_AS_READ": "Tandai semua sebagai sudah dibaca",
+    "NO_NOTIFICATIONS": "Anda belum memiliki notifikasi",
+    "ERROR": "Terjadi kesalahan saat mengambil notifikasi",
+    "NOTIFY_ITEM": {
+      "ROLES": {
+        "ADMIN": "Admin",
+        "CAN_EDIT": "Editor",
+        "READ_ONLY": "Penonton"
+      },
+      "NEW_USER_IN_WORKSPACE_TEXT": "telah bergabung dengan ruang kerja {name}",
+      "USER_LEFT_WORKSPACE_TEXT": "telah meninggalkan ruang kerja {name}",
+      "NEW_TASK_TEXT": "telah menambahkan tugas baru di ruang kerja {name}",
+      "NEW_MIND_MAP_TEXT": "telah menambahkan peta pikiran baru di ruang kerja {name}",
+      "NEW_ROLE_TEXT": "Anda telah diberikan izin tingkat {role} di ruang kerja {name}",
+      "NEW_ASSIGMENT_TASK_TEXT": "Anda telah ditugaskan tugas di ruang kerja {name}",
+      "NEW_ASSIGMENT_MIND_MAP_TEXT": "Anda telah ditugaskan ke peta pikiran di ruang kerja {name}"
+    }
+  },
+  "HOME_PAGE": {
+    "NO_DATA": "Tidak ada aktivitas ditemukan. Bergabunglah dengan ruang kerja atau buat ruang kerja sendiri. Kemudian, semua tugas dan peta pikiran yang diedit akan terlihat di sini sesuai urutan terbaru.",
+    "ERROR": "Terjadi kesalahan saat mengambil aktivitas terbaru."
+  },
+  "WORKSPACE_MAIN_PAGE": {
+    "FILTER": {
+      "FILTER_BTN": "Filter",
+      "CLEAR_BTN": "Hapus"
+    },
+    "COMMAND": {
+      "SEARCH": "Cari",
+      "NO_RESULTS_FOUND": "Tidak ada hasil ditemukan",
+      "ASSIGNED_TO": "DITUGASKAN KEPADA",
+      "TAG": "TAG",
+      "ASSIGNED_TO_ME": "Ditugaskan kepada saya"
+    },
+    "RECENT_ACTIVITY": {
+      "NO_FILTERED_DATA": "Tidak ada tugas dan peta pikiran untuk ditampilkan sesuai kriteria yang diberikan",
+      "ERROR": "Gagal mengambil data aktivitas terbaru ruang kerja",
+      "NO_DATA": "Tidak ada aktivitas ditemukan. Buat tugas dan peta pikiran pertama Anda sekarang!"
+    },
+    "SHORTCUT_CONTAINER": {
+      "GROUP_CHAT": "Obrolan Grup",
+      "PRIVATE_CHAT": "Obrolan Pribadi",
+      "NEW_TASK": "Tugas Baru",
+      "NEW_MIND_MAP": "Peta Pikiran Baru"
+    }
+  },
+  "CHAT": {
+    "NO_MESSAGES": {
+      "FIRST": "Kami tidak menemukan pesan di obrolan ini.",
+      "SECOND": "Kirim pesan pertama!"
+    },
+    "HEADER": { "TITLE": "Obrolan {workspaceName}" },
+    "DELETE_MESSAGE": {
+      "TITLE": "Hapus Pesan",
+      "DESC": "Operasi ini tidak dapat dibatalkan dan akan menghapus pesan secara permanen.",
+      "BTN_DELETE": "Hapus",
+      "BTN_CANCEL": "Batal"
+    },
+    "EDIT": {
+      "BADGE": "(diedit)",
+      "TEXT": {
+        "FIRST": "Tekan",
+        "SECOND": ", untuk membatalkan • Tekan",
+        "THIRD": ", untuk menyimpan"
+      }
+    },
+    "OPTIONS": {
+      "EDIT": "Edit Pesan",
+      "DELETE": "Hapus Pesan"
+    },
+    "LOAD_MORE": "Muat Lebih",
+    "NOTIFICATIONS": "{notifications} pesan baru",
+    "NEW_MESSAGE": {
+      "PLACEHOLDER": "Pesan baru",
+      "DELETE_ATACHMENT": "Hapus lampiran",
+      "ATACHMENT_DEAFULT_ERROR": "Gagal menambahkan lampiran.",
+      "ATACHMENT_TO_MANY_ERROR": "Gagal menambahkan lampiran. Jumlah maksimal file yang dapat Anda kirim sekaligus adalah 5 gambar dan 5 PDF.",
+      "ATACHMENT_TO_BIG_ERROR": "Gagal menambahkan lampiran. Salah satu file terlalu besar.",
+      "ATACHMENT_WRONG_FILE_ERROR": "Gagal menambahkan lampiran. Salah satu file memiliki format yang tidak didukung."
+    }
+  },
+  "CLIENT_ERROR": {
+    "TITLE": "Oh tidak... Ada yang salah",
+    "BTN": "Coba lagi"
+  },
+  "ROUTES": {
+    "DASHBOARD": "Beranda",
+    "SETTINGS": "Pengaturan",
+    "SECURITY": "Keamanan",
+    "THEME": "Tema",
+    "TASKS": "Tugas",
+    "UNTITLED": "Tanpa Judul",
+    "POMODORO": "Pomodoro",
+    "STARRED": "Berbintang",
+    "ASSIGNED-TO-ME": "Ditugaskan kepada saya"
+  },
+  "EDIT_WORKSPACE": {
+    "TITLE": "Edit ruang kerja",
+    "DESC": "Di sini Anda dapat mengubah nama ruang kerja dan ikonnya.",
+    "PICTURE": {
+      "LABEL": "IKON RUANG KERJA",
+      "TITLE": "Ubah ikon",
+      "BTN": "Pilih gambar"
+    },
+    "DATA": {
+      "INPUTS": {
+        "NAME": "NAMA RUANG KERJA",
+        "COLOR": "IKON WARNA RUANG KERJA"
+      },
+      "PLACEHOLDERS": {
+        "NAME": "cth. openstudio"
+      },
+      "INFO": "Mengubah warna hanya mempengaruhi tampilan ikon ruang kerja hanya ketika tidak ada gambar yang ditambahkan",
+      "BTN": "Perbarui",
+      "BTN_PENDING": "Memperbarui"
+    },
+    "DELETE": {
+      "TITLE": "Hapus ruang kerja",
+      "DESC": "Setelah ruang kerja dan data yang terkait dihapus, tidak ada cara untuk memulihkannya.",
+      "LABEL": "KONFIRMASI NAMA RUANG KERJA",
+      "BTN": "Hapus",
+      "DIALOG": {
+        "TITLE": "Hapus ruang kerja",
+        "DESC": "Semua data akan dihapus secara permanen, dan semua pengguna yang terkait dengan ruang kerja ini akan kehilangan akses ke dalamnya",
+        "WARNING": "Penghapusan ruang kerja bersifat permanen dan tidak dapat dibatalkan, klik 'Hapus ruang kerja' untuk menghapus ruang kerja",
+        "BUTTON": "HAPUS RUANG KERJA",
+        "PENDING_BTN": "Menghapus. Harap tunggu"
+      }
+    },
+    "MEMBERS": {
+      "TITLE": "Anggota",
+      "DESC": "Di sini Anda dapat mengelola anggota ruang kerja. Anda dapat mengubah peran mereka serta menghapus mereka dari ruang kerja.",
+      "TABLE": {
+        "USERNAME": "NAMA PENGGUNA",
+        "PERMISSION_SMALL": "IZIN",
+        "PERMISSION_BIG": "IZIN RUANG KERJA"
+      },
+      "OPTIONS": {
+        "REMOVE_BTN": "Hapus",
+        "REMOVE": {
+          "TITLE": "Hapus dari ruang kerja",
+          "NOTE": "Anda dapat mengundang pengguna ini kembali ke ruang kerja ini kapan saja. Untuk konfirmasi klik 'Hapus dari ruang kerja'",
+          "BTN": "Hapus dari ruang kerja",
+          "BTN_PENDING": "Menghapus"
+        }
+      }
+    }
+  }
+}
