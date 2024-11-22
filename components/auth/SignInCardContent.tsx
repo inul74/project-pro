@@ -113,7 +113,7 @@ export const SignInCardContent = () => {
           <div className="space-y-2">
             <Button
               disabled={isLoading}
-              className="w-full font-bold bg-black/70 text-white dark:bg-white/10 hover:bg-black/80 hover:dark:bg-white/20"
+              className="w-full font-bold bg-black/80 text-white dark:bg-white/10 hover:bg-black/70 hover:dark:bg-white/20"
               type="submit"
             >
               {isLoading ? (

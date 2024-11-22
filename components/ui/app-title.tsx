@@ -19,7 +19,7 @@ export const AppTitle = ({ className, hasLink, size = 20 }: Props) => {
           )}
         >
           <h1>
-            Super <span className="text-primary font-semibold">Productive</span>
+            Project <span className="text-primary font-semibold">Pro.</span>
           </h1>
         </Link>
       ) : (
@@ -30,7 +30,7 @@ export const AppTitle = ({ className, hasLink, size = 20 }: Props) => {
           )}
         >
           <h1>
-            Super <span className="text-primary font-semibold">Productive</span>
+            Project <span className="text-primary font-semibold">Pro.</span>
           </h1>
         </div>
       )}

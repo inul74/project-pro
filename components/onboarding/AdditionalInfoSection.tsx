@@ -3,6 +3,10 @@
 import { useOnboardingForm } from "@/context/OnboardingForm";
 import { AppTitle } from "../ui/app-title";
 import { FirstStep } from "./steps/FirstStep";
+import { SecondStep } from "./steps/SecondStep";
+import { ThirdStep } from "./steps/ThirdStep";
+import { Finish } from "./steps/Finish";
+import { FormStepsInfo } from "./FormStepsInfo";
 
 interface Props {
   profileImage?: string | null;
@@ -17,7 +21,11 @@ export const AdditionalInfoSection = ({ profileImage }: Props) => {
         <AppTitle size={50} />
 
         {currentStep === 1 && <FirstStep profileImage={profileImage} />}
+        {currentStep === 2 && <SecondStep />}
+        {currentStep === 3 && <ThirdStep />}
+        {currentStep === 4 && <Finish />}
       </div>
+      <FormStepsInfo />
     </section>
   );
 };
