@@ -46,7 +46,7 @@
         "FILE": "Ikon ruang kerja (opsional)"
       },
       "PLACEHOLDERS": {
-        "NAME": "Contoh: OpenStudio"
+        "NAME": "Contoh: Workspace1"
       },
       "IMAGE": "Hanya jenis .jpeg, .jpg, .png, .webp, .gif yang didukung",
       "BTN_ADD": "Buat",
@@ -138,7 +138,7 @@
       "SIGN_IN": "Anda telah masuk!",
       "IMAGE_PROFILE_UPDATE": "Gambar profil Anda telah diperbarui!",
       "IMAGE_PROFILE_DELETE": "Gambar profil Anda telah dihapus!",
-      "ONBOARDING_COMPLETE": "Selamat datang di Super Produktif!",
+      "ONBOARDING_COMPLETE": "Selamat datang di Project Pro!",
       "PASSWORD_CHANGED": "Kata sandi telah diubah!",
       "NEW_WORKSPACE": "Ruang kerja telah dibuat!"
     },
@@ -472,7 +472,7 @@
   "SETTINGS": {
     "ACCOUNT": {
       "TITLE": "Akun",
-      "DESC": "Kelola akun Super Produktif Anda. Semua perubahan pada akun Anda akan diterapkan ke semua ruang kerja.",
+      "DESC": "Kelola akun Project Pro Anda. Semua perubahan pada akun Anda akan diterapkan ke semua ruang kerja.",
       "IMAGE": "GAMBAR PROFIL",
       "USERNAME": "NAMA PENGGUNA",
       "FIRST_NAME": "NAMA DEPAN (OPSIONAL)",

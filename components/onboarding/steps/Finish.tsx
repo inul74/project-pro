@@ -55,11 +55,11 @@ export const Finish = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center gap-4 w-full mt-8 text-center">
-        <h2 className="font-bold text-4xl md:text-5xl max-w-xs gap-2">
+        <h2 className="font-bold text-4xl md:text-5xl max-w-xs">
           {t("FINISH.TITLE")}
         </h2>
       </div>
-      <div className="font-bold text-xl sm:text-2xl md:text-3xl w-full max-w-lg text-center">
+      <div className="font-bold text-xl sm:text-2xl md:text-3xl w-full max-w-lg text-center mt-2">
         <p>
           {t("FINISH.DESC_FIRST")}{" "}
           <span>

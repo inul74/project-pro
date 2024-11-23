@@ -2,6 +2,7 @@ import { checkIfUserCompletedOnboarding } from "@/lib/checkIfUserCompletedOnboar
 
 const Dashboard = async () => {
   const session = await checkIfUserCompletedOnboarding("/dashboard");
+  console.log(session);
 
   return (
     <>
