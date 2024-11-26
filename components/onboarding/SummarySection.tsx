@@ -1,5 +1,13 @@
 "use client";
 
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardTitle,
+} from "@/components/ui/card";
 import { useOnboardingForm } from "@/context/OnboardingForm";
 import { UserAvatar } from "../ui/user-avatar";
 import { useTranslations } from "next-intl";
@@ -13,7 +21,7 @@ export const SummarySection = () => {
       {currentStep < 3 && (
         <div className="bg-card rounded-2xl w-96 min-h-[10rem] shadow-sm flex flex-col items-center p-4 py-8 gap-5">
           <UserAvatar
-            className="w-40 h-40 shadow-sm mt-[-5rem]"
+            className="w-32 h-32 shadow-sm mt-[-5rem]"
             size={40}
             profileImage={profileImage}
           />

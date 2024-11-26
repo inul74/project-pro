@@ -11,18 +11,16 @@ interface Props {
 
 export const AuthCard = ({ signInCard }: Props) => {
   const t = useTranslations("AUTH");
-
   return (
     <>
-      <Card className="mt-4 w-full sm:min-w-[28rem] sm:w-auto">
+      <Card className="w-full sm:min-w-[28rem] sm:w-auto">
         <CardHeader>
           <Image
-            alt="profile"
+            alt=""
             className="rounded-full object-cover self-center"
             width={50}
             height={50}
             src={"https://github.com/shadcn.png"}
-            priority
           />
           <CardTitle className="pt-2">
             {signInCard ? t("SIGN_IN.TITLE") : t("SIGN_UP.TITLE")}

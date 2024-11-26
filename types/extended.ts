@@ -1,4 +1,16 @@
-import { UserPermission, Workspace } from "@prisma/client";
+import {
+  AdditionalResourceTypes,
+  CustomColors,
+  Message,
+  MindMap,
+  Notification,
+  savedMindMaps,
+  savedTask,
+  Tag,
+  Task,
+  UserPermission,
+  Workspace,
+} from "@prisma/client";
 
 export interface SubscriptionUser {
   userRole: UserPermission;

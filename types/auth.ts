@@ -14,8 +14,8 @@ declare module "next-auth" {
     user: User & {
       id: string;
       username?: string | null;
-      surname?: string | null;
       completedOnboarding: boolean;
+      surname?: string | null;
     };
   }
 }

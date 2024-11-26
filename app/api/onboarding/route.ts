@@ -1,8 +1,11 @@
 import { getAuthSession } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { NextResponse } from "next/server";
-import { UseCase as UseCaseType } from "@prisma/client";
 import { onboardingSchema } from "@/schema/onboardingSchema";
+import { NextResponse } from "next/server";
+import { z } from "zod";
+import { UseCase as UseCaseType } from "@prisma/client";
+import { v4 as uuidv4 } from "uuid";
+import { getRandomWorkspaceColor } from "@/lib/getRandomWorkspaceColor";
 
 export async function POST(request: Request) {
   const session = await getAuthSession();
@@ -32,7 +35,7 @@ export async function POST(request: Request) {
     });
 
     if (!user) {
-      return new NextResponse("User not found", {
+      return new NextResponse("ERRORS.NO_USER_API", {
         status: 404,
         statusText: "User not Found",
       });
@@ -55,6 +58,11 @@ export async function POST(request: Request) {
         creatorId: user.id,
         name: workspaceName,
         image: workspaceImage,
+        inviteCode: uuidv4(),
+        adminCode: uuidv4(),
+        canEditCode: uuidv4(),
+        readOnlyCode: uuidv4(),
+        color: getRandomWorkspaceColor(),
       },
     });
 
@@ -66,8 +74,20 @@ export async function POST(request: Request) {
       },
     });
 
+    await db.pomodoroSettings.create({
+      data: {
+        userId: user.id,
+      },
+    });
+
+    const conversation = await db.conversation.create({
+      data: {
+        workspaceId: workspace.id,
+      },
+    });
+
     return NextResponse.json("OK", { status: 200 });
-  } catch (_) {
+  } catch (err) {
     return NextResponse.json("ERRORS.DB_ERROR", { status: 405 });
   }
 }

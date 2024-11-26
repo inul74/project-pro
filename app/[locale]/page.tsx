@@ -1,29 +1,18 @@
 "use client";
 
-import { signOut, useSession } from "next-auth/react";
 import { HomePage } from "@/components/home/HomePage";
-import { Button } from "@/components/ui/button";
 import { ThemeSwitcher } from "@/components/switchers/ThemeSwitcher";
+import { Button } from "@/components/ui/button";
+import { signOut, useSession } from "next-auth/react";
+import { useTranslations } from "next-intl";
+import { redirect } from "next/navigation";
 
 const Home = () => {
   const session = useSession();
-  console.log(session);
 
-  const logoutHandler = () => {
-    signOut({
-      callbackUrl: `${window.location.origin}/sign-in`,
-    });
-  };
+  // if (session) redirect("/dashboard");
 
-  return (
-    <>
-      <Button variant={"destructive"} onClick={logoutHandler}>
-        Logout
-      </Button>
-      <ThemeSwitcher size={"icon"} alignHover={"end"} alignDropdown={"end"} />
-      <HomePage />
-    </>
-  );
+  return <HomePage />;
 };
 
 export default Home;

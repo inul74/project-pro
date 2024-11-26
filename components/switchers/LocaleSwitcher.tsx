@@ -7,20 +7,20 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Button } from "../ui/button";
+import { LoadingState } from "../ui/loading-state";
 import { useLocale, useTranslations } from "next-intl";
 import { HoverCard, HoverCardContent } from "../ui/hover-card";
 import { useChangeLocale } from "@/hooks/useChangeLocale";
-import { LoadingState } from "../ui/loading-state";
 
 interface Props {
   variant?:
-    | "default"
-    | "destructive"
-    | "outline"
-    | "secondary"
-    | "ghost"
-    | "link"
-    | null;
+  | "default"
+  | "destructive"
+  | "outline"
+  | "secondary"
+  | "ghost"
+  | "link"
+  | null;
   size?: "default" | "sm" | "lg" | "icon" | null;
   alignHover?: "center" | "start" | "end";
   alignDropdown?: "center" | "start" | "end";
@@ -38,7 +38,7 @@ export const LocaleSwitcher = ({
 
   const t = useTranslations("COMMON");
 
-  const { isLoading, onSelectChange } = useChangeLocale();
+  const { isLoading, isPending, onSelectChange } = useChangeLocale();
 
   return (
     <HoverCard openDelay={250} closeDelay={250}>

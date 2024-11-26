@@ -87,7 +87,7 @@
         "FILE": "Ikon ruang kerja (opsional)"
       },
       "PLACEHOLDERS": {
-        "NAME": "Contoh: Open Studio"
+        "NAME": "Contoh: Workspace1"
       },
       "IMAGE": "Hanya jenis .jpeg, .jpg, .png, .webp, .gif yang didukung"
     },
@@ -751,7 +751,9 @@
       "FIRST": "Kami tidak menemukan pesan di obrolan ini.",
       "SECOND": "Kirim pesan pertama!"
     },
-    "HEADER": { "TITLE": "Obrolan {workspaceName}" },
+    "HEADER": {
+      "TITLE": "Obrolan {workspaceName}"
+    },
     "DELETE_MESSAGE": {
       "TITLE": "Hapus Pesan",
       "DESC": "Operasi ini tidak dapat dibatalkan dan akan menghapus pesan secara permanen.",

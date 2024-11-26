@@ -1,7 +1,7 @@
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { getServerSession, NextAuthOptions } from "next-auth";
-import { Adapter } from "next-auth/adapters";
 import { db } from "./db";
+import { Adapter } from "next-auth/adapters";
 import GoogleProvider from "next-auth/providers/google";
 import GithubProvider from "next-auth/providers/github";
 import AppleProvider from "next-auth/providers/apple";
@@ -115,9 +115,10 @@ export const authOptions: NextAuthOptions = {
 
       if (user) {
         session.user.image = user.image;
-        session.user.username = user.username;
         session.user.completedOnboarding = user.completedOnboarding;
+        session.user.username = user.username;
       }
+     
 
       return session;
     },

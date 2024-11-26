@@ -12,14 +12,14 @@ import {
 import { signUpSchema, SignUpSchema } from "@/schema/signUpSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ProviderSignInBtns } from "./ProviderSignInBtns";
-import { useState } from "react";
 import { Input } from "../ui/input";
 import { useTranslations } from "next-intl";
 import { Button } from "../ui/button";
-import { LoadingState } from "../ui/loading-state";
+import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
+import { LoadingState } from "../ui/loading-state";
 
 export const SignUpCardContent = () => {
   const t = useTranslations("AUTH");
@@ -32,7 +32,6 @@ export const SignUpCardContent = () => {
       username: "",
     },
   });
-
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
   const router = useRouter();
@@ -128,7 +127,7 @@ export const SignUpCardContent = () => {
           <div className="space-y-2">
             <Button
               disabled={isLoading}
-              className="w-full font-bold bg-black/70 text-white dark:bg-white/10 hover:bg-black/80 hover:dark:bg-white/20"
+              className="w-full font-bold text-white"
               type="submit"
             >
               {isLoading ? (

@@ -47,8 +47,8 @@ export const SecondStep = () => {
   };
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-4 w-full mt-6 text-center">
-        <h2 className="font-bold text-3xl md:text-4xl max-w-xs">
+      <div className="flex flex-col justify-center items-center gap-4 w-full mt-10 text-center">
+        <h2 className="font-bold text-4xl md:text-5xl  max-w-xs">
           {t("SECOND_STEP.TITLE")} <span>Project</span>{" "}
           <span className="text-primary font-semibold">Pro?</span>
         </h2>
@@ -73,11 +73,10 @@ export const SecondStep = () => {
                       {useCases.map((useCase) => (
                         <FormItem
                           key={useCase.case}
-                          className={`flex items-center space-x-3 space-y-0 p-3 rounded-md transition-colors duration-200 relative overflow-hidden ${
-                            form.getValues("useCase") === useCase.case
-                              ? "bg-primary/40"
-                              : "hover:bg-primary/10"
-                          }`}
+                          className={`flex items-center space-x-3 space-y-0 p-3 rounded-md transition-colors duration-200 relative overflow-hidden ${form.getValues("useCase") === useCase.case
+                            ? "bg-primary/40"
+                            : "hover:bg-primary/10"
+                            }`}
                         >
                           <FormControl
                             onClick={(e) => {
@@ -101,8 +100,7 @@ export const SecondStep = () => {
               )}
             />
             <Button
-              className="mt-10 w-full max-w-md bg-black/80 text-white dark:bg-white/10 hover:bg-black/70 hover:dark:bg-white/20 font-semibold"
-              //   disabled={!form.formState.isValid}
+              className="mt-10 w-full max-w-md dark:text-white font-semibold"
               type="submit"
             >
               {t("NEXT_BTN")}

@@ -167,7 +167,7 @@ export function UploadFile({
                 className={cn(
                   `${
                     dragActive ? "bg-primary/20" : "bg-muted"
-                  } focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 p-4 sm:p-6 h-min-0 h-40 cursor-pointer hover:bg-muted/90 duration-200 transition-colors ring-offset-background rounded-md relative border-muted-foreground border border-dashed text-muted-foreground flex flex-col items-center w-[15rem] justify-center`,
+                  } focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2  p-4 sm:p-6 h-min-0 h-40 cursor-pointer hover:bg-muted/90 duration-200 transition-colors ring-offset-background rounded-md relative border-muted-foreground border border-dashed text-muted-foreground flex flex-col items-center w-[15rem] justify-center`,
                   ContainerClassName
                 )}
                 onDragEnter={handleDragEnter}

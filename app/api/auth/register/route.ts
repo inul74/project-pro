@@ -8,7 +8,7 @@ export async function POST(request: Request) {
   const result = signUpSchema.safeParse(body);
 
   if (!result.success) {
-    return NextResponse.json("Missing fields, wrong data!", { status: 203 });
+    return NextResponse.json("Missing fields, Wrong Data", { status: 203 });
   }
 
   const { email, password, username } = result.data;

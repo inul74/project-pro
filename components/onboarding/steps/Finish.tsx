@@ -54,16 +54,16 @@ export const Finish = () => {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-4 w-full mt-8 text-center">
-        <h2 className="font-bold text-4xl md:text-5xl max-w-xs">
+      <div className="flex flex-col justify-center items-center gap-4 w-full mt-10 text-center">
+        <h2 className="font-bold text-4xl md:text-5xl  max-w-xs">
           {t("FINISH.TITLE")}
         </h2>
       </div>
-      <div className="font-bold text-xl sm:text-2xl md:text-3xl w-full max-w-lg text-center mt-2">
+      <div className="font-bold text-xl sm:text-2xl md:text-3xl w-full max-w-lg text-center">
         <p>
           {t("FINISH.DESC_FIRST")}{" "}
           <span>
-            Project <span className="text-primary font-semibold">Pro. </span>
+            Project <span className="text-primary font-semibold">Pro.</span>
           </span>
           {t("FINISH.DESC_SECOND")}{" "}
         </p>
@@ -71,7 +71,7 @@ export const Finish = () => {
           disabled={isPending || isDone}
           onClick={() => completeOnboarding()}
           type="submit"
-          className="mt-10 sm:mt-30 w-full max-w-md dark:text-white font-semibold"
+          className="mt-10 sm:mt-32 w-full max-w-md dark:text-white font-semibold"
         >
           {isPending || isDone ? (
             <LoadingState loadingText={isDone ? t("IS_DONE") : ""} />

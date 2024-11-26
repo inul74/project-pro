@@ -1,5 +1,5 @@
 import React from "react";
-import { LocaleSwitcher } from "@/components/switchers/LocaleSwitcher";
+import { LocaleSwitcher } from "../../../components/switchers/LocaleSwitcher";
 import { ThemeSwitcher } from "@/components/switchers/ThemeSwitcher";
 
 const OnboardingLayout = ({ children }: { children: React.ReactNode }) => {

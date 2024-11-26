@@ -1,12 +1,12 @@
 "use client";
 
 import { useOnboardingForm } from "@/context/OnboardingForm";
-import { AppTitle } from "../ui/app-title";
-import { FirstStep } from "./steps/FirstStep";
-import { SecondStep } from "./steps/SecondStep";
-import { ThirdStep } from "./steps/ThirdStep";
-import { Finish } from "./steps/Finish";
+import { FirstStep } from "../onboarding/steps/FirstStep";
+import { SecondStep } from "../onboarding/steps/SecondStep";
+import { ThirdStep } from "../onboarding/steps/ThirdStep";
 import { FormStepsInfo } from "./FormStepsInfo";
+import { AppTitle } from "../ui/app-title";
+import { Finish } from "./steps/Finish";
 
 interface Props {
   profileImage?: string | null;

@@ -42,7 +42,6 @@ export const ThirdStep = () => {
         title: m("ERRORS.WORKSPACE_ICON_ADDED"),
         variant: "destructive",
       });
-      console.log(error);
     },
     onClientUploadComplete: (data) => {
       if (data) {

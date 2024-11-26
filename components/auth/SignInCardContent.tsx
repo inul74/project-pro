@@ -1,8 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useTranslations } from "next-intl";
+import { CardContent } from "../ui/card";
 import {
   Form,
   FormControl,
@@ -10,20 +9,21 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { CardContent } from "@/components/ui/card";
-import { LoadingState } from "@/components/ui/loading-state";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { signInSchema, SignInSchema } from "@/schema/signInSchema";
 import { ProviderSignInBtns } from "./ProviderSignInBtns";
-import { signIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { Input } from "../ui/input";
+import { useTranslations } from "next-intl";
+import { Button } from "../ui/button";
+import Link from "next/link";
+import { signInSchema, SignInSchema } from "@/schema/signInSchema";
+import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
+import { LoadingState } from "../ui/loading-state";
 
 export const SignInCardContent = () => {
   const t = useTranslations("AUTH");
-  const m = useTranslations("MESSAGES");
   const form = useForm<SignInSchema>({
     resolver: zodResolver(signInSchema),
     defaultValues: {
@@ -31,10 +31,10 @@ export const SignInCardContent = () => {
       password: "",
     },
   });
-
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
   const router = useRouter();
+  const m = useTranslations("MESSAGES");
 
   const onSubmit = async (data: SignInSchema) => {
     setIsLoading(true);
@@ -113,7 +113,7 @@ export const SignInCardContent = () => {
           <div className="space-y-2">
             <Button
               disabled={isLoading}
-              className="w-full font-bold bg-black/80 text-white dark:bg-white/10 hover:bg-black/70 hover:dark:bg-white/20"
+              className="w-full font-bold text-white"
               type="submit"
             >
               {isLoading ? (
